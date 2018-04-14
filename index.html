@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse A String</title>
+</head>
+<body>
+
+<input type="text" placeholder="Enter a string" id="string"/>
+
+<br/>
+
+<bdo dir="rtl" id="reversed"></bdo>
+
+<script type="text/javascript">
+
+    setInterval(printReverse, 100);
+    output = document.getElementById("reversed");
+    input = document.getElementById("string");
+
+    function printReverse() {
+        output.innerHTML = input.value;
+    }
+
+</script>
+</body>
+</html>
